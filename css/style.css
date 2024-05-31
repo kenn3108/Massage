@@ -1,4 +1,33 @@
+html {
+    scroll-behavior: smooth;/
+}
+
+#main {
+    position: relative;
+}
+
+.arrow-up {
+    position: fixed;
+    font-size: 24px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 100%;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ad7118;
+    box-shadow: 1px #333;
+    z-index: 99;
+    display: none;
+    cursor: pointer;
+}
+
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,9 +35,9 @@
     background-color: #000;
 }
 
-#header>img {
-    width: 150px;
-    height: 150px;
+#header img {
+    width: 100px;
+    height: 100px;
 }
 
 #header>.navigation {
@@ -109,7 +138,8 @@
     display: flex;
     margin-top: 60px;
     margin-bottom: 60px;
-    gap: 15px;
+    animation: none;
+    gap: 5px;
 }
 
 #about .row .left {
@@ -134,6 +164,7 @@
 #about .row .about-description .btn-submit {
     text-align: center;
     margin-top: 50px;
+    animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 #about .row .about-description .btn-submit a {
@@ -328,13 +359,11 @@
     color: #fff;
     padding: 10px 40px;
     border: 2px solid #ad7118;
+    background-color: #AD7118;
     border-radius: 20px;
     text-transform: uppercase;
     font-size: 18px;
-}
-
-.main-content .container .list-item .item .btn-book:hover {
-    background-color: #AD7118;
+    animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 #contact {
@@ -427,6 +456,14 @@
 #footer .left .list-socials {
     display: flex;
     align-items: center;
+}
+
+#footer .left .list-socials a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    gap: 5px;
+    align-items: end;
 }
 
 #footer .left .list-socials i {
