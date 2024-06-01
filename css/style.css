@@ -6,6 +6,58 @@ html {
     position: relative;
 }
 
+#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 50;
+}
+
+#menu .entry {
+    display: flex;
+    align-items: center;
+}
+
+#menu i {
+    padding: 15px;
+    font-size: 36px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#menu .menu-navigation {
+    padding: 10px;
+}
+
+#menu .menu-navigation a {
+    text-decoration: none;
+    color: #ad7118;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    padding: 10px 0;
+}
+
+#menu .menu-navigation a::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #ad7118;
+    transition: 0.5s all;
+}
+
+#menu .menu-navigation a:hover::before {
+    width: 100%;
+}
+
 .arrow-up {
     position: fixed;
     font-size: 24px;
