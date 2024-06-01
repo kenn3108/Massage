@@ -56,6 +56,12 @@ html {
     position: relative;
 }
 
+#header i {
+    display: none;
+    font-size: 36px;
+    color: #fff;
+}
+
 #header>.navigation>a:hover {
     color: #FFA188;
 }
@@ -225,7 +231,7 @@ html {
 }
 
 #content .entry-content .entry-content-summary {
-    width: 850px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     margin-top: 30px;
@@ -287,6 +293,7 @@ html {
 
 #content .main-content {
     background-color: #000;
+    width: 100%;
 }
 
 #content .main-content .container {
@@ -299,6 +306,7 @@ html {
     font-size: 36px;
     color: #C1872F;
     text-align: center;
+    margin: 10px 0;
 }
 
 #content .main-content .container .list-item {
@@ -371,6 +379,7 @@ html {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     height: 462px;
     position: relative;
 }
