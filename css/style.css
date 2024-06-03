@@ -135,29 +135,29 @@ html {
 }
 
 .slider {
-    height: 800px;
-}
-
-.slider {
+    height: 700px;
     width: 100%;
 }
 
 .container {
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .container .list-images {
     display: flex;
     gap: 5px;
     transition: 0.5s all;
+    height: 100%;
 }
 
 .container .list-images img {
     width: calc(100% / 3);
+    height: 100%;
 }
 
-.btn {
+.slider .btn {
     font-size: 45px;
     color: #999;
     position: absolute;
